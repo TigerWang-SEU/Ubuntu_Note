@@ -55,7 +55,7 @@ Fill all the <___>s with information you need.
 
 2. Create the public and private key for signing the kernel:
 ```
-openssl req -config ./mokconfig.cnf \
+openssl req -config ./openssl.cnf \
         -new -x509 -newkey rsa:2048 \
         -nodes -days 36500 -outform DER \
         -keyout "MOK.priv" \
